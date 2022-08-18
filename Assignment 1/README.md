@@ -21,9 +21,9 @@ the output amount depending on the quantity of item available on hand.
 - The bash script takes EMPLOYEE.txt as input and calculates the total pay of the employees according to 
 their exemption status and hours worked
 
-    *Base pay is calculated by multiplying the total hours worked times pay rate*
-    *Overtime pay is calculated by multiplying half the hours worked over 40 times pay rate*
-    *Therefore Total pay is the sum of Base pay and Overtime pay*
+- *Base pay is calculated by multiplying the total hours worked times pay rate*
+*Overtime pay is calculated by multiplying half the hours worked over 40 times pay rate*
+*Therefore Total pay is the sum of Base pay and Overtime pay*
 
 - To run the bash script, make it executable by running the following command in the terminal window in the directory
 containing the program
