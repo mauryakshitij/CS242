@@ -1,3 +1,7 @@
+# Run the program in ubuntu
+# open terminal in the directory containing the program and enter
+# >> awk -f 210101059_Assign01.awk INVENTORY.txt
+
 BEGIN{ print "\n\t\t\t\t","INVENTORY REPORT\n"
 print "Part No.\tPrice\tQuantity on Hand\tReorder Point\tMinimum Order\tOrder amount\n"}
 
