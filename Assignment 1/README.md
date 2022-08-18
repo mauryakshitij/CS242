@@ -28,8 +28,8 @@ their exemption status and hours worked
 - To run the bash script, make it executable by running the following command in the terminal window in the directory
 containing the program
 
-    `$ chmod +x 210101059.Assign01.sh`
+    `$ chmod +x 210101059_Assign01.sh`
 
 - Execute the bash script using the following command
 
-    `$ ./210101059.Assign01.sh`
+    `$ ./210101059_Assign01.sh`
