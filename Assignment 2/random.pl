@@ -15,9 +15,9 @@ my $maxLength = $ARGV[1];  #Storing the maximum length argument in a variable
 my $randomString = "";     #Initialising an empty random string
 my $stringLength = 0;      #Initiallising the length of our random string
 
-#Throwing an error if any of the arguments entered is 0
-if($count==0 || $maxLength==0){
-    print("Error: Arguments can not be 0\n");
+#If count is less than 2 or the max length is 0 the code throws an error
+if($count<2 || $maxLength==0){
+    print("Error: Arguments unacceptable, enter different arguments\n");
     exit();
 }
 

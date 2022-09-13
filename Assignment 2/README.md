@@ -49,7 +49,7 @@
 #### Explanation
 
 - The code stores the number of arguments entered in a variable and throws an error if the number of arguments entered is not equal to 2.
-- If any argument entered is 0, the code throws an error
+- If count is less than 2 or the max length is 0 the code throws an error
 - Initialise an empty random string and another variable which stores it's length at any instance
 - Open "input.txt" and store the string in it as a character array
 - A loop runs and generates two random numbers for index and number of repetitions respectively and concatenates the string so generated to the random string to be generated finally
