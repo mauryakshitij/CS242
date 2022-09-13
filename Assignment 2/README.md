@@ -40,21 +40,20 @@
 - Run the perl script using the following command 
     - Enter Count as the first argument and maximum length as the second argument
 
-    `perl random.pl #count #length`
+      `$ perl random.pl #count #length`
 
-- The program outputs a random string of length less than or equal to the max length
+- *The program outputs a random string of length equal to the max length*
 
     
 
 #### Explanation
 
 - The code stores the number of arguments entered in a variable and throws an error if the number of arguments entered is not equal to 2.
-
 - If any argument entered is 0, the code throws an error
-
 - Initialise an empty random string and another variable which stores it's length at any instance
-
 - Open "input.txt" and store the string in it as a character array
-
-- A loop runs and generates two random numbers for index and number of repetitions respectively and concatenates the string so generated to the random string to be generated finally 
+- A loop runs and generates two random numbers for index and number of repetitions respectively and concatenates the string so generated to the random string to be generated finally
+- The code keeps a record of the last random character selected and makes sure that the next random character generated is different from the last one
+- It generates a new pair of random numbers if the length of string shall exceed the max length in this iteration
+- The loop ends when length of string is equal to max length
 
