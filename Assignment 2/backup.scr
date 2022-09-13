@@ -1,0 +1,44 @@
+#!/bin/bash
+
+#Saving the number of arguments entered in the terminal in a variable
+arguments=$#
+
+if [ $arguments -lt 2 ]    #Throwing an error if the number of arguments entered in the terminal are less than 2
+then 
+    echo "Error : Two arguments required"
+    exit
+elif [ $arguments -gt 2 ]    #Throwing an error if the number of arguments entered in the terminal are greater than 2
+then
+    echo "Error : Arguments can't be greater than 2"
+    exit
+fi
+
+fileList=$1          #Saving the file containing the list of files to be backed up in a variable
+backupDirectory=$2   #Saving the directory in which files are to be backed up in a variable
+
+
+
+if [ ! -f "$fileList" ]     #Throwing an error if the first argument is not the name of a file
+then
+	echo "File not found"
+    exit
+fi
+
+if [ ! -d "$backupDirectory" ]   #Throwing an error if the directory mentioned in the second argument is not found
+then
+	echo "Backup directory not found"
+    exit
+fi
+
+#Running a loop for reading the names of files to be backed up from the list of files
+while read line       
+do 
+currFile=$line      #Storing the name of the current file in a local variable
+
+cp "$currFile" "${backupDirectory}"/"${currFile}.bak"   #Copying the current file to the backup directory and changing the extension to .bak
+
+done <"$fileList"
+
+
+
+echo "Succesfully backed up"  #Message to be printed if program is successful

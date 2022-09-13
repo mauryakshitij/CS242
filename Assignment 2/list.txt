@@ -1,3 +1,4 @@
 file1.txt
 file2
 file3
+file4.txt
